@@ -5,7 +5,8 @@ In the current version, the **Base Number**, **Controller Id** and the **3D posi
 
 ```
 printf("Controller index: %d\nFirmware Version: %u\nHardware Version: %u\nHemi Tracking enabled: %u\n Magnetic frequency: %u\nPacket type: %u\nSequence number: %u\nHand: %u\n\n",
-	acd.controllers[cont].controller_index, acd.controllers[cont].firmware_revision, acd.controllers[cont].hardware_revision, 	  acd.controllers[cont].hemi_tracking_enabled, acd.controllers[cont].magnetic_frequency,
+	acd.controllers[cont].controller_index, acd.controllers[cont].firmware_revision, acd.controllers[cont].hardware_revision,
+	acd.controllers[cont].hemi_tracking_enabled, acd.controllers[cont].magnetic_frequency,
         acd.controllers[cont].packet_type, acd.controllers[cont].sequence_number, acd.controllers[cont].which_hand)
 ```
 
