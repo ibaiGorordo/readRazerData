@@ -16,6 +16,9 @@ The sampling rate can be edited by changing the value of the **SAMPLING_PERIOD**
 ## Timestamp
 The original **sixense_simple3d** program is not suitable for data logging because the **Sampling Rate** is variable and there is no information in the log file about the Timestamp for each sample. For this reason, in this program the ellapsed time from the start of the program is stored for each sample. Furthermore, the value of the incremental that goes from 0-255 is stored to check how many frames have been missed or if the same frame has been already stored.
 
+## Stop program
+Whenever the **q** key is pressed, the logging is stopped and the the program stops running.
+
 # Repository folders
 The repository contains 6 folders:
 * **bin:** Contains the .dll files from the Sixense SDK.
