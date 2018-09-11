@@ -4,10 +4,9 @@ Program based on the sixense_simple3d code from the Sixense SDK to read the data
 In the current version, the **Base Number**, **Controller Id** and the **3D positions** are printed in the command line. The printed information can be changed by editing the code in the ***draw_controller_info*** function. For example, the following code is commented, but by uncommenting it, information about the controller can be showed.
 
 ```
-// Print information about the controllers:
-				printf("Controller index: %d\nFirmware Version: %u\nHardware Version: %u\nHemi Tracking enabled: %u\n Magnetic frequency: %u\nPacket type: %u\nSequence number: %u\nHand: %u\n\n",
-					acd.controllers[cont].controller_index, acd.controllers[cont].firmware_revision, acd.controllers[cont].hardware_revision, acd.controllers[cont].hemi_tracking_enabled, acd.controllers[cont].magnetic_frequency,
-					acd.controllers[cont].packet_type, acd.controllers[cont].sequence_number, acd.controllers[cont].which_hand)
+printf("Controller index: %d\nFirmware Version: %u\nHardware Version: %u\nHemi Tracking enabled: %u\n Magnetic frequency: %u\nPacket type: %u\nSequence number: %u\nHand: %u\n\n",
+	acd.controllers[cont].controller_index, acd.controllers[cont].firmware_revision, acd.controllers[cont].hardware_revision, 	  acd.controllers[cont].hemi_tracking_enabled, acd.controllers[cont].magnetic_frequency,
+        acd.controllers[cont].packet_type, acd.controllers[cont].sequence_number, acd.controllers[cont].which_hand)
 ```
 
 ## Sampling rate
